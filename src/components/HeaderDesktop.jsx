@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { links } from "./arrays";
 import {  ContactButton } from "./ContactButton";
 
-export const LargeScreenHeader = () => {
+export const HeaderDesktop = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

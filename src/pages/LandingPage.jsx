@@ -1,21 +1,25 @@
 import React from "react";
 
-import { SmallScreenHeader } from "../components/SmallScreenHeader";
-import { LargeScreenHeader } from "../components/LargeScreenHeader";
+import { HeaderMobile } from "../components/HeaderMobile";
+import { HeaderDesktop } from "../components/HeaderDesktop";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import Services from "../components/Services";
 import { Projects } from "../components/Projects";
+import { TechGridDesktop } from "../components/TechGridDesktop";
+import { TechGridMobile } from "../components/TechGridMobile";
 
 export const LandingPage = () => {
   return (
     <div>
-      <SmallScreenHeader />
-      <LargeScreenHeader/>
+      <HeaderMobile />
+      <HeaderDesktop />
       <Hero />
       <About />
       <Services />
       <Projects />
+      <TechGridDesktop />
+      <TechGridMobile />
     </div>
   );
 };

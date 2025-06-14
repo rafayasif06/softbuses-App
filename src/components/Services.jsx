@@ -9,7 +9,7 @@ const Services = () => {
         <div className="relative  ">
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 relative px-5 py-3 bg-black  text-primary text-lg font-bold ">
             {servicesAvailable.map((item, index) => (
-              <div className="relative group">
+              <div key={index} className="relative group">
                 <div className="absolute top-2 left-2 w-full h-full bg-primary group-hover:bg-white transition-colors duration-300"></div>
                 <div
                   key={index}
